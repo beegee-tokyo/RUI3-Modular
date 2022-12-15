@@ -13,6 +13,7 @@ This code is _**Work in progress**_ and far from finished. But it can give a fir
 - [Packet data format](#packet-data-format)
 - [Device setup](#device-setup)
    - [Custom AT commands](#custom-at-commands)
+- [Video](#video)
 
 | <img src="./assets/RAK-Whirls.png" alt="RAKWireless"> | <img src="./assets/RUI3.jpg" alt="RUI3" width=30%> | <img src="./assets/rakstar.jpg" alt="RAKstar" > |    
 | :-: | :-: | :-: |     
@@ -343,3 +344,12 @@ atc+gnss=?
 
 GNSS 6 digit extended Cayenne LPP
 ```
+
+----
+
+# Video 
+
+
+
+https://user-images.githubusercontent.com/512690/207790983-19cd3b95-f305-4db9-9d74-0fe396841195.mp4
+
