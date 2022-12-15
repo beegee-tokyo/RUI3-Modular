@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 /**
  * @file RUI3-Modular.ino
  * @author Bernd Giesecke (bernd@giesecke.tk)
@@ -33,21 +33,21 @@ uint8_t set_fPort = 2;
  *
  * @param data Structure with the received data
  */
-#line 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void receiveCallback(SERVICE_LORA_RECEIVE_T *data);
-#line 66 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 66 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void sendCallback(int32_t status);
-#line 83 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 83 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void joinCallback(int32_t status);
-#line 106 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 106 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void setup();
-#line 200 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 200 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void sensor_handler(void *);
-#line 261 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 261 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void loop();
-#line 272 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 272 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void send_packet(void);
-#line 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+#line 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void receiveCallback(SERVICE_LORA_RECEIVE_T *data)
 {
 	MYLOG("RX-CB", "RX, port %d, DR %d, RSSI %d, SNR %d", data->Port, data->RxDatarate, data->Rssi, data->Snr);

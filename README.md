@@ -29,7 +29,7 @@ The complete LoRaWAN communication is handled by RUI3, setup is done with WisToo
 
 This is a generic description for the six steps required to build an application. See below an example for two WisBlock modules.
 
-1) Copy the **`.cpp`** and **`.h`** file(s) for the required module(s) from the folder **`module-files`** to the project folder. 
+1) Copy the **`.cpp`** file for the required module(s) from the folder **`module-files`** to the project folder. 
 2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.     
 3) Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172
 4) Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)
@@ -42,7 +42,7 @@ In this short tutorial an application is created for the WisBlock modules [RAK19
 
 ### Step 1
 
-Select the 4 files required in the **`module-files`** folder and copy them into the project folder:
+Select the 2 files required in the **`module-files`** folder and copy them into the project folder:
 <img src="./assets/copy-files-1.png" alt="copy module files">
 
 ### Step 2

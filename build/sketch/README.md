@@ -1,6 +1,6 @@
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\README.md"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\README.md"
 # RUI3-Modular
-This example is an approach to provide a quick start with RUI3 and WisBlock Sensor modules. With 6 simple steps you can build a sensor application and send data packets to a LoRaWAN server.
+This example is an approach to provide a quick start with RUI3 and WisBlock Sensor modules. With 6 simple steps you can build a sensor application and send data packets to a LoRaWAN server or over LoRa P2P.
 
 This code is _**Work in progress**_ and far from finished. But it can give a first start how to use RUI3.     
      
@@ -22,7 +22,7 @@ This code is _**Work in progress**_ and far from finished. But it can give a fir
 
 # How does it work
 
-This repository has ready to use files for many [WisBlock Modules](https://docs.rakwireless.com/Product-Categories/WisBlock/). The main application **`main.cpp`** is designed to handle (most) of the different modules automatically. Enabled modules are read and their data is added to the uplink payload automatically.     
+This repository has ready to use files for many [WisBlock Modules](https://docs.rakwireless.com/Product-Categories/WisBlock/). The main application **`main.cpp`** is designed to handle (most) of the different modules automatically. Enabled modules are included in the scheduled sensor readings and their data is added to the uplink payload automatically.     
 Only a few steps are required to add a module to the application.     
 The complete LoRaWAN communication is handled by RUI3, setup is done with WisToolBox or AT commands.     
 
@@ -32,7 +32,7 @@ This is a generic description for the six steps required to build an application
 
 1) Copy the **`.cpp`** and **`.h`** file(s) for the required module(s) from the folder **`module-files`** to the project folder. 
 2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.     
-3) Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAk4630, RAk3172
+3) Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172
 4) Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)
 5) In case of LoRaWAN, join the network from [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT command](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/) [**`AT+JOIN=1:1`**](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-join)    
 6) Check the uplinks on the LoRaWAN server
@@ -104,6 +104,7 @@ As the uplink packets are encoded in an extended Cayenne-LPP format (see [Packet
 | Module | Function | Supported |
 | --     | --       | --          |
 | [RAK4631-R](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/Overview/) ⤴️ | WisBlock Core module with RUI3| ✔ |
+| [RAK3372](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK3372/Overview/) ⤴️ | WisBlock Core module with RUI3| ✔ |
 | [RAK19007](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Overview/) ⤴️ | WisBlock Base board | ✔ |
 | [RAK19003](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19003/Overview/) ⤴️ | WisBlock Mini Base board | ✔ |
 | [RAK19001](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19001/Overview/) ⤴️ | WisBlock Fullsize Base board | ✔ |
@@ -236,6 +237,9 @@ The content of the packet depends on the modules installed on the WisBlock Base 
 Channel ID's in cursive are extended format and not supported by standard Cayenne LPP data decoders.
 
 Example decoders for TTN, Chirpstack, Helium and Datacake can be found in the folder [decoders](./decoders) ⤴️
+
+### _REMARK_
+This list is constantly extended as we add new WisBlock modules. Check out the [RAKwireless Standardized Payload](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) repo for the latest status.
 
 # Device setup
 

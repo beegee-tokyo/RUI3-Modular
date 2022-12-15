@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\libraries\ClosedCube_OPT3001\ClosedCube_OPT3001.cpp.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\libraries\ClosedCube_OPT3001\ClosedCube_OPT3001.cpp.o: \
  D:\Projects\libraries\ClosedCube_OPT3001\src\ClosedCube_OPT3001.cpp \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/Wire.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/Stream.h \

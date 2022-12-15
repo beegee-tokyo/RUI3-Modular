@@ -1,4 +1,4 @@
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\module-files\\RAK12002_rtc.cpp"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\module-files\\RAK12002_rtc.cpp"
 /**
  * @file RAK12002_rtc.cpp
  * @author Bernd Giesecke (bernd.giesecke@rakwireless.com)

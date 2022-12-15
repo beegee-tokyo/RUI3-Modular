@@ -1,4 +1,4 @@
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\module_handler.h"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\module_handler.h"
 /**
  * @file module_handler.h
  * @author Bernd Giesecke (bernd@giesecke.tk)
@@ -73,26 +73,28 @@ void send_packet(void);
 
 extern WisCayenne g_solution_data;
 
-// Sensors
-#include "RAK1901_temp.h" // Download and install from ZIP file: https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip
-// #include "RAK1902_press.h"	   // Click here to get the library: http://librarymanager/All#Adafruit_LPS2X
-#include "RAK1903_light.h"	   // Click here to get the library: http://librarymanager/All#OPT3001
-// #include "RAK1904_acc.h"	   // Click here to get the library: http://librarymanager/All#SparkFun-LIS3DH
-// #include "RAK1905_9dof.h"	   // Click here to get the library: http://librarymanager/All#MPU9250_WE
-// #include "RAK1906_env.h"	   // Click here to get the library: http://librarymanager/All#Adafruit_BME680
-// #include "RAK1921_display.h"   // Click here to get the library: http://librarymanager/All#nRF52_OLED
-// #include "RAK12002_rtc.h"	   // Click here to get the library: http://librarymanager/All#Melopero_RV3028
-// #include "RAK12003_fir.h"	   // Click here to get the library: http://librarymanager/AllSparkFun_MLX90632_Arduino_Library
-// #include "RAK12010_light.h"	   // Click here to get the library: http://librarymanager/All#Light_veml7700
-// #include "RAK12014_tof.h"	   // Click here to get the library: http://librarymanager/All#VL53L0X
-// #include "RAK12019_uv.h"	   // Click here to get the library: http://librarymanager/All#RAK12019_LTR390
-// #include "RAK12027_seismic.h" // Click here to get the library: http://librarymanager/All#RAK12027_D7S
-// #include "RAK12037_co2.h"	   // Click here to get the library: http://librarymanager/All#SparkFun_SCD30
-// #include "RAK12039_pm.h"	   // Click here to get the library: http://librarymanager/All#RAK12039_PMSA003I
-// #include "RAK12040_temp_arr.h" // Click here to get the library: http://librarymanager/Melopero_AMG8833
-// #include "RAK12047_voc.h"	   // Click here to get the library: http://librarymanager/http://librarymanager/All#SensirionI2CSgp40
-// #include "RAK12500_gnss.h"	   // Click here to get the library: http://librarymanager/http://librarymanager/All#SparkFun_u-blox_GNSS
-// #include "RAK13011_switch.h" // No library required
+// Uncomment the sensors that are used
+#define _RAK1901_TEMP_H_ // Requires library from ZIP file: https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip
+// #define _RAK1902_PRESS_H_ // Click here to get the library: http://librarymanager/All#Adafruit_LPS2X
+#define _RAK1903_LIGHT_H_ // Click here to get the library: http://librarymanager/All#OPT3001
+// #define _RAK1904_ACC_H_	  // Click here to get the library: http://librarymanager/All#SparkFun-LIS3DH
+// #define _RAK1905_9DOF_H_  // Click here to get the library: http://librarymanager/All#MPU9250_WE
+// #define _RAK1906_ENV_H_	  // Click here to get the library: http://librarymanager/All#Adafruit_BME680
+// #define _RAK1921_DISPLAY_H_ // Click here to get the library: http://librarymanager/All#nRF52_OLED
+// #define _RAK12002_RTC_H_	// Click here to get the library: http://librarymanager/All#Melopero_RV3028
+// #define _RAK12003_FIR_H_	// Click here to get the library: http://librarymanager/AllSparkFun_MLX90632_Arduino_Library
+// #define _RAK12010_LIGHT_H_	// Click here to get the library: http://librarymanager/All#Light_veml7700
+// #define _RAK12014_TOF_H_	// Click here to get the library: http://librarymanager/All#VL53L0X
+// #define _RAK12019_UV_H_		// Click here to get the library: http://librarymanager/All#RAK12019_LTR390
+// #define _RAK12027_SEISMIC_H_ // Click here to get the library: http://librarymanager/All#RAK12027_D7S
+// #define _RAK12037_CO2_H_	 // Click here to get the library: http://librarymanager/All#SparkFun_SCD30
+// #define _RAK12039_PM_H_		 // Click here to get the library: http://librarymanager/All#RAK12039_PMSA003I
+// #define _RAK12040_TEMP_ARR_H_ // Click here to get the library: http://librarymanager/Melopero_AMG8833
+// #define _RAK12047_VOC_H_	  // Click here to get the library: http://librarymanager/http://librarymanager/All#SensirionI2CSgp40
+// #define _RAK12500_GNSS_H_	  // Click here to get the library: http://librarymanager/http://librarymanager/All#SparkFun_u-blox_GNSS
+// #define _RAK13011_SWITCH_H_	  // No library required
+
+#include "module_def.h"
 
 // Custom AT commands
 bool init_status_at(void);

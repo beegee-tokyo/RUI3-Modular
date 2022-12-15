@@ -1,4 +1,4 @@
-# 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 /**
 
  * @file RUI3-Modular.ino
@@ -18,8 +18,8 @@
  *
 
  */
-# 11 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
-# 12 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino" 2
+# 11 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
+# 12 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino" 2
 
 /** Initialization results */
 bool ret;
@@ -46,7 +46,7 @@ uint8_t set_fPort = 2;
  * @param data Structure with the received data
 
  */
-# 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 34 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void receiveCallback(SERVICE_LORA_RECEIVE_T *data)
 {
  do { if ("RX-CB") Serial.printf("[%s] ", "RX-CB"); Serial.printf("RX, port %d, DR %d, RSSI %d, SNR %d", data->Port, data->RxDatarate, data->Rssi, data->Snr); Serial.printf("\n"); } while (0); udrv_app_delay_ms(100);
@@ -83,7 +83,7 @@ void receiveCallback(SERVICE_LORA_RECEIVE_T *data)
  * @param status TX status
 
  */
-# 66 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 66 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void sendCallback(int32_t status)
 {
  do { if ("TX-CB") Serial.printf("[%s] ", "TX-CB"); Serial.printf("TX status %d", status); Serial.printf("\n"); } while (0); udrv_app_delay_ms(100);
@@ -105,7 +105,7 @@ void sendCallback(int32_t status)
  * @param status Join result
 
  */
-# 83 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 83 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void joinCallback(int32_t status)
 {
  // MYLOG("JOIN-CB", "Join result %d", status);
@@ -132,7 +132,7 @@ void joinCallback(int32_t status)
  *
 
  */
-# 106 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 106 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void setup()
 {
  if (api.lorawan.nwm.get() == 1)
@@ -159,7 +159,7 @@ void setup()
 
  // Start Serial
  Serial.begin(115200);
-# 150 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 150 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
  // For RAK3172 just wait a little bit for the USB to be ready
  udrv_app_delay_ms(5000);
 
@@ -194,9 +194,9 @@ void setup()
  {
   // Start a timer.
   api.system.timer.start(RAK_TIMER_0, g_send_repeat_time, 
-# 183 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino" 3 4
+# 183 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino" 3 4
                                                          __null
-# 183 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 183 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
                                                              );
  }
 
@@ -205,9 +205,9 @@ void setup()
   digitalWrite(1/*LED2*/ /* IO_SLOT*//*PA1*/, 0x0);
 
   sensor_handler(
-# 190 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino" 3 4
+# 190 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino" 3 4
                 __null
-# 190 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 190 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
                     );
  }
 }
@@ -223,7 +223,7 @@ void setup()
  *
 
  */
-# 200 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 200 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void sensor_handler(void *)
 {
  // MYLOG("UPLINK", "Start");
@@ -246,7 +246,7 @@ void sensor_handler(void *)
 /** Insert here sensor specific codes */
 /**************************************/
 /**************************************/
-# 223 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino" 2
+# 223 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino" 2
  // #ifdef _RAK1904_ACC_H_
  // 	if (handle_rak1904_int())
  // 	{
@@ -290,7 +290,7 @@ void sensor_handler(void *)
  *
 
  */
-# 261 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 261 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void loop()
 {
  api.system.sleep.all();
@@ -307,7 +307,7 @@ void loop()
  *
 
  */
-# 272 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\RUI3-Modular.ino"
+# 272 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\RUI3-Modular-Simplify.ino"
 void send_packet(void)
 {
  if (api.lorawan.nwm.get() == 1)

@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\rtc-board.c.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\rtc-board.c.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\rtc-board.c \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/external/lora/LoRaMac-node-4.4.7/src/boards/utilities.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/external/lora/LoRaMac-node-4.4.7/src/system/delay.h \

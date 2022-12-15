@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\component\service\lora\service_lora_test.c.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\component\service\lora\service_lora_test.c.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\cores\STM32WLE\component\service\lora\service_lora_test.c \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\cores\STM32WLE\component\service\lora\service_lora_test.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/variants/WisDuo_RAK3172_Evaluation_Board/pin_define.h \

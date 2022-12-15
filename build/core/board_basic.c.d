@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\board_basic.c.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\board_basic.c.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\board_basic.c \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\board_basic.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\pin_define.h \

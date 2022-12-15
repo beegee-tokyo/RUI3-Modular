@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\PortNames.c.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\PortNames.c.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\PortNames.c \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\PortNames.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/external/STM32CubeWL/Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \

@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\variant.cpp.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\variant.cpp.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\variant.cpp \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\variant.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\variants\WisDuo_RAK3172_Evaluation_Board\PinNames.h \

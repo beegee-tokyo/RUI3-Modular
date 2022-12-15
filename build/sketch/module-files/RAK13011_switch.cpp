@@ -1,4 +1,4 @@
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\module-files\\RAK13011_switch.cpp"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\module-files\\RAK13011_switch.cpp"
 /**
  * @file RAK13011_switch.cpp
  * @author Bernd Giesecke (bernd@giesecke.tk)

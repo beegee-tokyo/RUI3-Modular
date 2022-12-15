@@ -1,4 +1,4 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\core\component\core\mcu\stm32wle5xx\uhal\uhal_gpio.c.o: \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\core\component\core\mcu\stm32wle5xx\uhal\uhal_gpio.c.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\cores\STM32WLE\component\core\mcu\stm32wle5xx\uhal\uhal_gpio.c \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3\cores\STM32WLE\component\core\mcu\stm32wle5xx\uhal\uhal_gpio.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/udrv/gpio/udrv_gpio.h \

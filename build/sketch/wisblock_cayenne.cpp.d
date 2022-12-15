@@ -1,6 +1,6 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\wisblock_cayenne.cpp.o: \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\wisblock_cayenne.cpp \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\wisblock_cayenne.h \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\wisblock_cayenne.cpp.o: \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\wisblock_cayenne.cpp \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\wisblock_cayenne.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/Arduino.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/ruiTop.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/udrv/delay/udrv_delay.h \

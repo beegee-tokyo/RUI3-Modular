@@ -1,4 +1,4 @@
-#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular\\module-files\\RAK12027_seismic.cpp"
+#line 1 "d:\\#Github\\RUI3-Examples\\RUI3-Modular-Simplify\\module-files\\RAK12027_seismic.cpp"
 /**
  * @file RAK12027_seismic.cpp
  * @author Bernd Giesecke (bernd.giesecke@rakwireless.com)
@@ -73,6 +73,8 @@ volatile uint16_t g_seismic_event = 0;
 #pragma message "Slot F"
 #define INT1_PIN WB_IO6
 #define INT2_PIN WB_IO5
+#else
+#error message "No interrupt pins defined for RAK12027, define them in RAK12027_seismic.cp
 #endif
 
 // flag variables to handle collapse/shutoff only one time during an earthquake

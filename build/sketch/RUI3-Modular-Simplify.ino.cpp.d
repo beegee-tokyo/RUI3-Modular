@@ -1,5 +1,5 @@
-d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\RUI3-Modular.ino.cpp.o: \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\RUI3-Modular.ino.cpp \
+d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\RUI3-Modular-Simplify.ino.cpp.o: \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\RUI3-Modular-Simplify.ino.cpp \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/Arduino.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/ruiTop.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/udrv/delay/udrv_delay.h \
@@ -127,13 +127,12 @@ d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\RUI3-Modular.ino.cpp.o: \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/variants/WisDuo_RAK3172_Evaluation_Board/board_basic.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/variants/WisDuo_RAK3172_Evaluation_Board/pin_define.h \
  C:\Users\Bernd\AppData\Local\Arduino15\packages\rak_rui\hardware\stm32\3.5.3/cores/STM32WLE/component/rui_v3_api/Arduino.h \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\main.h \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\module_handler.h \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\wisblock_cayenne.h \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\main.h \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\module_handler.h \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\wisblock_cayenne.h \
  D:\Projects\libraries\CayenneLPP\src/CayenneLPP.h \
  D:\Projects\libraries\ArduinoJson\src/ArduinoJson.h \
  D:\Projects\libraries\ArduinoJson\src/ArduinoJson.hpp \
  D:\Projects\libraries\ArduinoJson\src/ArduinoJson/Configuration.hpp \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\RAK1901_temp.h \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\RAK1903_light.h \
- d:\\#Github\RUI3-Examples\RUI3-Modular\build\sketch\sensor_handler.h
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\module_def.h \
+ d:\\#Github\RUI3-Examples\RUI3-Modular-Simplify\build\sketch\sensor_handler.h
