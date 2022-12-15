@@ -1,0 +1,14 @@
+{
+    "sketch": "RUI3-Modular.ino",
+    "configuration": "debug=l0",
+    "board": "rak_rui:stm32:WisDuoRAK3172EvaluationBoard",
+    "programmer": "rak_rui:nrfjprog",
+    "port": "COM42",
+    "output": "build",
+    "buildPreferences": [
+        [
+            "compiler.cpp.extra_flags",
+            "-DRUI_DEV=2"
+        ]
+    ]
+}
