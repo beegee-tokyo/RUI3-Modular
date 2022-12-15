@@ -100,6 +100,14 @@ As the uplink packets are encoded in an extended Cayenne-LPP format (see [Packet
 
 <img src="./assets/lns-decoded-data.png" alt="Decoded Data">
 
+----
+
+# Video 
+
+https://user-images.githubusercontent.com/512690/207828565-40556d17-0945-4564-a631-31174d528bd8.mp4
+
+----
+
 # Hardware supported
 | Module | Function | Supported |
 | --     | --       | --          |
@@ -346,10 +354,4 @@ GNSS 6 digit extended Cayenne LPP
 ```
 
 ----
-
-# Video 
-
-
-
-https://user-images.githubusercontent.com/512690/207790983-19cd3b95-f305-4db9-9d74-0fe396841195.mp4
 
