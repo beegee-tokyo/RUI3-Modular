@@ -72,26 +72,64 @@ void send_packet(void);
 
 extern WisCayenne g_solution_data;
 
-// Uncomment the sensors that are used
-// #define _RAK1901_TEMP_H_ // Requires library from ZIP file: https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip
-// #define _RAK1902_PRESS_H_ // Click here to get the library: http://librarymanager/All#Adafruit_LPS2X
-// #define _RAK1903_LIGHT_H_ // Click here to get the library: http://librarymanager/All#OPT3001
-// #define _RAK1904_ACC_H_	  // Click here to get the library: http://librarymanager/All#SparkFun-LIS3DH
-// #define _RAK1905_9DOF_H_  // Click here to get the library: http://librarymanager/All#MPU9250_WE
-// #define _RAK1906_ENV_H_	  // Click here to get the library: http://librarymanager/All#Adafruit_BME680
-// #define _RAK1921_DISPLAY_H_ // Click here to get the library: http://librarymanager/All#nRF52_OLED
-// #define _RAK12002_RTC_H_	// Click here to get the library: http://librarymanager/All#Melopero_RV3028
-// #define _RAK12003_FIR_H_	// Click here to get the library: http://librarymanager/AllSparkFun_MLX90632_Arduino_Library
-// #define _RAK12010_LIGHT_H_	// Click here to get the library: http://librarymanager/All#Light_veml7700
-// #define _RAK12014_TOF_H_	// Click here to get the library: http://librarymanager/All#VL53L0X
-// #define _RAK12019_UV_H_		// Click here to get the library: http://librarymanager/All#RAK12019_LTR390
-// #define _RAK12027_SEISMIC_H_ // Click here to get the library: http://librarymanager/All#RAK12027_D7S
-// #define _RAK12037_CO2_H_	 // Click here to get the library: http://librarymanager/All#SparkFun_SCD30
-// #define _RAK12039_PM_H_		 // Click here to get the library: http://librarymanager/All#RAK12039_PMSA003I
-// #define _RAK12040_TEMP_ARR_H_ // Click here to get the library: http://librarymanager/Melopero_AMG8833
-// #define _RAK12047_VOC_H_	  // Click here to get the library: http://librarymanager/http://librarymanager/All#SensirionI2CSgp40
-// #define _RAK12500_GNSS_H_	  // Click here to get the library: http://librarymanager/http://librarymanager/All#SparkFun_u-blox_GNSS
-// #define _RAK13011_SWITCH_H_	  // No library required
+// Enable modules if their code files exists
+#if __has_include("RAK1901_temp.cpp")
+#define _RAK1901_TEMP_H_
+#endif
+#if __has_include("RAK1902_press.cpp")
+#define _RAK1902_PRESS_H_
+#endif
+#if __has_include("RAK1903_light.cpp")
+#define _RAK1903_LIGHT_H_
+#endif
+#if __has_include("RAK1904_acc.cpp")
+#define _RAK1904_ACC_H_
+#endif
+#if __has_include("RAK1905_9dof.cpp")
+#define _RAK1905_9DOF_H_
+#endif
+#if __has_include("RAK1906_env.cpp")
+#define _RAK1906_ENV_H_
+#endif
+#if __has_include("RAK1921_display.cpp")
+#define _RAK1921_DISPLAY_H_
+#endif
+#if __has_include("RAK12002_rtc.cpp")
+#define _RAK12002_RTC_H_
+#endif
+#if __has_include("RAK12003_fir.cpp")
+#define _RAK12003_FIR_H_
+#endif
+#if __has_include("RAK12010_light.cpp")
+#define _RAK12010_LIGHT_H_
+#endif
+#if __has_include("RAK12014_tof.cpp")
+#define _RAK12014_TOF_H_
+#endif
+#if __has_include("RAK12019_uv.cpp")
+#define _RAK12019_UV_H_
+#endif
+#if __has_include("RAK12027_seismic.cpp")
+#define _RAK12027_SEISMIC_H_
+#endif
+#if __has_include("RAK12037_co2.cpp")
+#define _RAK12037_CO2_H_
+#endif
+#if __has_include("RAK12039_pm.cpp")
+#define _RAK12039_PM_H_
+#endif
+#if __has_include("RAK12039_pm.cpp")
+#define _RAK12040_TEMP_ARR_H_
+#endif
+#if __has_include("RAK12047_voc.cpp")
+#define _RAK12047_VOC_H_
+#endif
+#if __has_include("RAK12500_gnss.cpp")
+#define _RAK12500_GNSS_H_
+#endif
+#if __has_include("RAK13011_switch.cpp")
+#define _RAK13011_SWITCH_H_
+#endif
 
 #include "module_def.h"
 

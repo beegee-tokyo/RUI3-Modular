@@ -10,6 +10,7 @@
  */
 // RAK1901
 #ifdef _RAK1901_TEMP_H_
+#pragma message("Enabled RAK1901")
 // Functions
 bool init_rak1901(void);
 void read_rak1901(void);
@@ -18,6 +19,7 @@ void get_rak1901_values(float *values);
 
 // RAK1902
 #ifdef _RAK1902_PRESS_H_
+#pragma message("Enabled RAK1902")
 // Functions
 bool init_rak1902(void);
 void read_rak1902(void);
@@ -28,6 +30,7 @@ extern float mean_sea_level_press;
 
 // RAK1903
 #ifdef _RAK1903_LIGHT_H_
+#pragma message("Enabled RAK1903")
 // Functions
 bool init_rak1903(void);
 void read_rak1903();
@@ -35,6 +38,7 @@ void read_rak1903();
 
 // RAK1904
 #ifdef _RAK1904_ACC_H_
+#pragma message("Enabled RAK1904")
 // Functions
 bool rak1904_writeRegister(uint8_t chip_reg, uint8_t dataToWrite);
 bool rak1904_readRegister(uint8_t *outputPointer, uint8_t chip_reg);
@@ -52,6 +56,7 @@ extern bool gnss_active;
 
 // RAK1905
 #ifdef _RAK1905_9DOF_H_
+#pragma message("Enabled RAK1905")
 // Functions
 bool init_rak1905(void);
 void read_rak1905(void);
@@ -62,6 +67,7 @@ void clear_int_rak1905(void);
 
 // RAK1906
 #ifdef _RAK1906_ENV_H_
+#pragma message("Enabled RAK1906")
 // Functions
 bool init_rak1906(void);
 void start_rak1906(void);
@@ -73,6 +79,7 @@ extern float mean_sea_level_press;
 
 // RAK1921
 #ifdef _RAK1921_DISPLAY_H_
+#pragma message("Enabled RAK1921")
 // Functions
 bool init_rak1921(void);
 void rak1921_add_line(char *line);
@@ -93,6 +100,7 @@ void rak1921_write_header(char *header_line);
 
 // RAK12002
 #ifdef _RAK12002_RTC_H_
+#pragma message("Enabled RAK12002")
 // Functions
 bool init_rak12002(void);
 void set_rak12002(uint16_t year, uint8_t month, uint8_t date, uint8_t hour, uint8_t minute);
@@ -115,6 +123,7 @@ extern date_time_s g_date_time;
 
 // RAK12003
 #ifdef _RAK12003_FIR_H_
+#pragma message("Enabled RAK12003")
 // Functions
 bool init_rak12003(void);
 void read_rak12003(void);
@@ -122,6 +131,7 @@ void read_rak12003(void);
 
 // RAK12010
 #ifdef _RAK12010_LIGHT_H_
+#pragma message("Enabled RAK12010")
 // Functions
 bool init_rak12010(void);
 void read_rak12010(void);
@@ -129,6 +139,7 @@ void read_rak12010(void);
 
 // RA12014
 #ifdef _RAK12014_TOF_H_
+#pragma message("Enabled RAK12014")
 // Functions
 bool init_rak12014(void);
 void read_rak12014(void);
@@ -136,6 +147,7 @@ void read_rak12014(void);
 
 // RAK12019
 #ifdef _RAK12019_UV_H_
+#pragma message("Enabled RAK12019")
 // Functions
 bool init_rak12019(void);
 void read_rak12019(void);
@@ -143,6 +155,7 @@ void read_rak12019(void);
 
 // RAK12027
 #ifdef _RAK12027_SEISMIC_H_
+#pragma message("Enabled RAK12027")
 bool init_rak12027(void);
 bool calib_rak12027(void);
 void read_rak12027(bool add_values);
@@ -167,6 +180,7 @@ extern volatile uint16_t g_seismic_event;
 
 // RAK12037
 #ifdef _RAK12037_CO2_H_
+#pragma message("Enabled RAK12037")
 // Functions
 bool init_rak12037(void);
 void read_rak12037(void);
@@ -174,6 +188,7 @@ void read_rak12037(void);
 
 // RAK12039
 #ifdef _RAK12039_PM_H_
+#pragma message("Enabled RAK12039")
 // Functions
 bool init_rak12039(void);
 void read_rak12039(void);
@@ -182,6 +197,7 @@ void read_rak12039(void);
 
 // RAK12040
 #ifdef _RAK12040_TEMP_ARR_H_
+#pragma message("Enabled RAK12040")
 // Functions
 bool init_rak12040(void);
 void read_rak12040(void);
@@ -193,6 +209,7 @@ void read_rak12040(void);
 
 // RAK12047
 #ifdef _RAK12047_VOC_H_
+#pragma message("Enabled RAK12047")
 // Functions
 bool init_rak12047(void);
 void read_rak12047(void);
@@ -201,6 +218,10 @@ void do_read_rak12047(void *);
 
 // RAK12500
 #ifdef _RAK12500_GNSS_H_
+#pragma message("Enabled RAK12500")
+#if defined(_VARIANT_RAK3172_) || defined(_VARIANT_RAK3172_SIP_)
+#pragma warning("RAK12500 is not supported by RAK3172")
+#endif
 // Functions
 bool init_gnss(void);
 bool poll_gnss(void);
@@ -230,6 +251,7 @@ extern bool gnss_active;
 
 // RAK13011
 #ifdef _RAK13011_SWITCH_H_
+#pragma message("Enabled RAK13011")
 // Functions
 bool init_rak13011(void);
 void handle_rak13011(void *);
