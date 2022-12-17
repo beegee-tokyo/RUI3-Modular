@@ -337,6 +337,7 @@ def clean_build_cb():
 
 
 def refresh_installation():
+    global installation_complete
     compile_command = arduino_cli_cmd + " config delete board_manager.additional_urls"
     headline = "Cleaning up additional BSP URL's"
     return_code1 = ext_app_to_log(compile_command, headline, False)
