@@ -1,0 +1,32 @@
+{
+	"name": "RAKwireless VEML Light Sensor",
+	"version": "1.0.1",
+	"keywords": [
+		"Light Sensor",
+		"VEML7700",
+		"RAKWireless",
+		"WisBlock",
+		"RAK12010"
+	],
+	"description": "RAKWireless library for the RAK12010 ambient light sensor module with the VEML7700 chip",
+	"frameworks": [
+		"arduino"
+	],
+	"platforms": [
+		"*"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"email": "clark.li@rakwireless.com",
+			"url": "https://rakwireless.com",
+			"maintainer": true,
+			"name": "Clark Li"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RAKWireless/RAK12010-VEML7700-Library"
+	},
+	"homepage": "https://rakwireless.com"
+}

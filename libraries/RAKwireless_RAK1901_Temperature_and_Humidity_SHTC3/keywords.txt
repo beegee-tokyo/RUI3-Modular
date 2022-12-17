@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For Energy Saving
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+rak1901	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+wakeup	KEYWORD2
+deinit	KEYWORD2
+sleep	KEYWORD2
+update	KEYWORD2
+temperature	KEYWORD2
+humidity	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################

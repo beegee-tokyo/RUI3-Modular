@@ -1,3 +1,6 @@
 .vscode/c_cpp_properties.json
 .vscode/settings.json
 build
+Python-App/Arduino15
+Python-App/arduino*
+Arduino15

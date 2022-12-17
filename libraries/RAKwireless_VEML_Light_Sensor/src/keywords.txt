@@ -1,0 +1,42 @@
+#######################################
+# Syntax Coloring Map For Light_VEML7700
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Light_VEML7700            KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2    
+enable	KEYWORD2
+interruptEnable	KEYWORD2
+setPersistence	KEYWORD2
+setIntegrationTime	KEYWORD2
+getIntegrationTime	KEYWORD2
+setGain	KEYWORD2
+getGain	KEYWORD2
+powerSaveEnable	KEYWORD2
+setPowerSaveMode	KEYWORD2
+getPowerSaveMode	KEYWORD2
+setLowThreshold	KEYWORD2
+getLowThreshold	KEYWORD2
+setHighThreshold	KEYWORD2
+getHighThreshold	KEYWORD2
+interruptStatus	KEYWORD2
+readLux	KEYWORD2
+readLuxNormalized	KEYWORD2
+readALS	KEYWORD2
+readWhite		KEYWORD2
+readWhiteNormalized	KEYWORD2
+normalize_resolution		KEYWORD2
+sendData	KEYWORD2
+receiveData	KEYWORD2
+sampleDelay	KEYWORD2
+GetAutoLux	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
