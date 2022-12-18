@@ -1,0 +1,24 @@
+board_manager:
+  additional_urls:
+  - https://raw.githubusercontent.com/beegee-tokyo/test/main/beegee-patch-rui3.json
+daemon:
+  port: "50051"
+directories:
+  data: .\Arduino15
+  downloads: .\Arduino15\staging
+  user: ..\
+library:
+  enable_unsafe_install: false
+logging:
+  file: ""
+  format: text
+  level: info
+metrics:
+  addr: :9090
+  enabled: true
+output:
+  no_color: true
+sketch:
+  always_export_binaries: false
+updater:
+  enable_notification: true

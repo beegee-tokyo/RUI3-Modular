@@ -185,6 +185,16 @@ void init_modules(void)
 	}
 #endif // _RAK12037_CO2_H_
 
+#ifdef _RAK12039_PM_H_
+	if (!init_rak12039())
+	{
+		MYLOG("MODS", "Could not initialize RAK12039");
+	}
+	{
+		Serial.println("+EVT:RAK12039 OK");
+	}
+#endif // _RAK12039_PM_H_
+
 #ifdef _RAK12040_TEMP_ARR_H_
 	if (!init_rak12040())
 	{
@@ -279,6 +289,10 @@ void get_sensor_values(void)
 #ifdef _RAK12037_CO2_H_
 	read_rak12037();
 #endif // _RAK12037_CO2_H_
+
+#ifdef _RAK12039_PM_H_
+	read_rak12039();
+#endif // _RAK12039_PM_H_
 
 #ifdef _RAK12040_TEMP_ARR_H_
 	read_rak12040();

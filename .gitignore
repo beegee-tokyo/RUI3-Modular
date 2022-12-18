@@ -1,6 +1,12 @@
 .vscode/c_cpp_properties.json
 .vscode/settings.json
 build
-Python-App/Arduino15
-Python-App/arduino*
+cache
+flash-files
+Build-RUI3
 Arduino15
+Python-App/.bsp
+Python-App/.config
+Python-App/dist
+Python-App/*.spec
+Python-App/build

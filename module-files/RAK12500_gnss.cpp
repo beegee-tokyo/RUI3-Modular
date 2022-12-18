@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "RAK12500_gnss.h"
+#include "main.h"
 
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h>
 

@@ -23,6 +23,9 @@ uint8_t g_confirmed_retry = 0;
 /** Data rate  (Set with AT commands) */
 uint8_t g_data_rate = 3;
 
+/** Flag if transmit is active, used by some sensors */
+volatile bool tx_active = false;
+
 /** fPort to send packages */
 uint8_t set_fPort = 2;
 
@@ -73,6 +76,7 @@ void sendCallback(int32_t status)
 	/***********************************************/
 	/***********************************************/
 	// gnss_active = false;
+	tx_active = false;
 }
 
 /**
@@ -220,27 +224,6 @@ void sensor_handler(void *)
 /**************************************/
 /**************************************/
 #include "sensor_handler.h"
-	// #ifdef _RAK1904_ACC_H_
-	// 	if (handle_rak1904_int())
-	// 	{
-	// 		return;
-	// 	}
-	// #endif
-	// #ifdef _RAK1905_ACC_H_
-	// 	if (handle_rak1905_int())
-	// 	{
-	// 		return;
-	// 	}
-	// #endif
-	// #ifdef _RAK12500_GNSS_H_
-	// 	start_gnss();
-	// 	return;
-	// #endif
-
-	// #ifdef _RAK12027_SEISMIC_H_
-	// 	handle_rak12027();
-	// 	return;
-	// #endif
 
 	// Add battery voltage
 	g_solution_data.addVoltage(LPP_CHANNEL_BATT, api.system.bat.get());
@@ -279,6 +262,7 @@ void send_packet(void)
 		if (api.lorawan.send(g_solution_data.getSize(), g_solution_data.getBuffer(), set_fPort, g_confirmed_mode, g_confirmed_retry))
 		{
 			MYLOG("UPLINK", "Packet enqueued");
+			tx_active = true;
 		}
 		else
 		{

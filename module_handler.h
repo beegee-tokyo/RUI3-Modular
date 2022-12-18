@@ -118,7 +118,7 @@ extern WisCayenne g_solution_data;
 #if __has_include("RAK12039_pm.cpp")
 #define _RAK12039_PM_H_
 #endif
-#if __has_include("RAK12039_pm.cpp")
+#if __has_include("RAK12040_pm.cpp")
 #define _RAK12040_TEMP_ARR_H_
 #endif
 #if __has_include("RAK12047_voc.cpp")

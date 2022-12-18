@@ -14,6 +14,11 @@
 /** Sensor instance */
 Melopero_AMG8833 amg8833;
 
+/** HOT value (in degrees C) to adjust the contrast */
+#define HOT 30.0
+/** COLD value (in degrees C) to adjust the contrast */
+#define COLD 25.0
+
 /**
  * @brief This table can be of type int because we map the pixel
  * temperature to 0-3. Temperatures are reported by the

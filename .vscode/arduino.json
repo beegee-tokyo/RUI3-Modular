@@ -1,5 +1,4 @@
 {
-    "configuration": "debug=l0",
     "buildPreferences": [
         [
             "compiler.cpp.extra_flags",
@@ -9,5 +8,5 @@
     "board": "rak_rui:stm32:WisDuoRAK3172EvaluationBoard",
     "port": "COM42",
     "sketch": "RUI3-Modular.ino",
-	"output": "Build-RUI3"
+    "output": "Build"
 }
