@@ -31,6 +31,12 @@ The complete LoRaWAN communication is handled by RUI3, setup is done with WisToo
 This is a generic description for the six steps required to build an application. See below an example for two WisBlock modules.
 
 1) Copy the **`.cpp`** file for the required module(s) from the folder **`module-files`** to the project folder.     
+
+> ## REMARK
+> _**The modules RAK1904, RAK1905, RAK12014, RAK12027 and RAK13011 have different GPIO assigments, depending on the Sensor Slot they are used in.**_    
+_**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
+_**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_D.h file.**_
+
 ~~2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.~~ Not required anymore. Compiler directives can now detect which modules are being used.     
 2) ~~3)~~ Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172
 3) ~~4)~~ Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)
@@ -44,7 +50,12 @@ In this short tutorial an application is created for the WisBlock modules [RAK19
 ### Step 1
 
 Select the 2 files required in the **`module-files`** folder and copy them into the project folder:
-<img src="./assets/copy-files-1.png" alt="copy module files">
+<img src="./assets/copy-files-1.png" alt="copy module files">     
+
+## REMARK
+_**The modules RAK1904, RAK1905, RAK12014, RAK12027 and RAK13011 have different GPIO assigments, depending on the Sensor Slot they are used in.**_    
+_**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
+_**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_D.h file.**_
 
 ### ~~Step 2~~
 
@@ -148,13 +159,10 @@ https://user-images.githubusercontent.com/512690/208067185-bd38881e-3cc6-4db8-ba
 | [~~RAK14008~~](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK14008/Overview/) ⤴️ | WisBlock Gesture sensor | Work in progress |
 
 
-## _LIMITATIONS_     
-- The RAK1904 module _**MUST**_ be installed in     
-    - Slot C of RAK19007, RAK19007 or RAK19001
-    - Slot A of RAK19003
-- The RAK1905 module _**MUST**_ be installed in     
-    - Slot C of RAK19007, RAK19007 or RAK19001
-    - Slot A of RAK19003
+## REMARK
+_**The modules RAK1904, RAK1905, RAK12014, RAK12027 and RAK13011 have different GPIO assigments, depending on the Sensor Slot they are used in.**_    
+_**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
+_**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_D.h file.**_
 
 ----
 

@@ -44,8 +44,22 @@ analog_s analog_val;
 // Slot F      WB_IO6
 //******************************************************************//
 
-// Power pin for RAK12014
-uint8_t xshut_pin = WB_IO4;
+/** Power pin for RAK12014, depends on slot */
+#if __has_include("RAK12014_tof_S_A.h")
+#include "RAK12014_tof_S_A.h"
+#elif __has_include("RAK12014_tof_S_B.h")
+#include "RAK12014_tof_S_B.h"
+#elif __has_include("RAK12014_tof_S_C.h")
+#include "RAK12014_tof_S_C.h"
+#elif __has_include("RAK12014_tof_S_D.h")
+#include "RAK12014_tof_S_D.h"
+#elif __has_include("RAK12014_tof_S_E.h")
+#include "RAK12014_tof_S_E.h"
+#elif __has_include("RAK12014_tof_S_F.h")
+#include "RAK12014_tof_S_F.h"
+#elif
+uint8_t acc_int_pin = WB_IO4;
+#endif
 
 /**
  * @brief Initialize the VL53L01 sensor

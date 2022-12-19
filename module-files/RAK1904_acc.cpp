@@ -24,7 +24,21 @@
 //******************************************************************//
 
 /** Interrupt pin, depends on slot */
+#if __has_include("RAK1904_acc_S_A.h")
+#include "RAK1904_acc_S_A.h"
+#elif __has_include("RAK1904_acc_S_B.h")
+#include "RAK1904_acc_S_B.h"
+#elif __has_include("RAK1904_acc_S_C.h")
+#include "RAK1904_acc_S_C.h"
+#elif __has_include("RAK1904_acc_S_D.h")
+#include "RAK1904_acc_S_D.h"
+#elif __has_include("RAK1904_acc_S_E.h")
+#include "RAK1904_acc_S_E.h"
+#elif __has_include("RAK1904_acc_S_F.h")
+#include "RAK1904_acc_S_F.h"
+#elif 
 uint8_t acc_int_pin = WB_IO3;
+#endif
 
 // Forward declarations
 void int_callback_rak1904(void);

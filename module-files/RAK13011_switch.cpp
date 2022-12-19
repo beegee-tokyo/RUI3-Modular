@@ -24,31 +24,48 @@
 #define RAK13011_SLOT 'C'
 
 /** Interrupt pin, depends on slot */
-// Slot A
-#if RAK13011_SLOT == 'A'
-#pragma message "Slot A"
-#define SW_INT_PIN WB_IO1
-// Slot B
-#elif RAK13011_SLOT == 'B'
-#pragma message "Slot B"
-#define SW_INT_PIN WB_IO2
-// Slot C
-#elif RAK13011_SLOT == 'C'
-#pragma message "Slot C"
-#define SW_INT_PIN WB_IO3
-// Slot D
-#elif RAK13011_SLOT == 'D'
-#pragma message "Slot D"
-#define SW_INT_PIN WB_IO5
-// Slot E
-#elif RAK13011_SLOT == 'E'
-#pragma message "Slot E"
-#define SW_INT_PIN WB_IO4
-// Slot F
-#elif RAK13011_SLOT == 'F'
-#pragma message "Slot F"
+#if __has_include("RAK13011_switch_S_A.h")
+#include "RAK13011_switch_S_A.h"
+#elif __has_include("RAK13011_switch_S_B.h")
+#include "RAK13011_switch_S_B.h"
+#elif __has_include("RAK13011_switch_S_C.h")
+#include "RAK13011_switch_S_C.h"
+#elif __has_include("RAK13011_switch_S_D.h")
+#include "RAK13011_switch_S_D.h"
+#elif __has_include("RAK13011_switch_S_E.h")
+#include "RAK13011_switch_S_E.h"
+#elif __has_include("RAK13011_switch_S_F.h")
+#include "RAK13011_switch_S_F.h"
+#elif
 #define SW_INT_PIN WB_IO6
 #endif
+
+// /** Interrupt pin, depends on slot */
+// // Slot A
+// #if RAK13011_SLOT == 'A'
+// #pragma message "Slot A"
+// #define SW_INT_PIN WB_IO1
+// // Slot B
+// #elif RAK13011_SLOT == 'B'
+// #pragma message "Slot B"
+// #define SW_INT_PIN WB_IO2
+// // Slot C
+// #elif RAK13011_SLOT == 'C'
+// #pragma message "Slot C"
+// #define SW_INT_PIN WB_IO3
+// // Slot D
+// #elif RAK13011_SLOT == 'D'
+// #pragma message "Slot D"
+// #define SW_INT_PIN WB_IO5
+// // Slot E
+// #elif RAK13011_SLOT == 'E'
+// #pragma message "Slot E"
+// #define SW_INT_PIN WB_IO4
+// // Slot F
+// #elif RAK13011_SLOT == 'F'
+// #pragma message "Slot F"
+// #define SW_INT_PIN WB_IO6
+// #endif
 
 volatile uint8_t events_queue[50] = {0};
 

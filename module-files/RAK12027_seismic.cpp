@@ -41,40 +41,58 @@ volatile uint16_t g_seismic_event = 0;
 // Slot F      WB_IO5
 //******************************************************************//
 
-/** Interrupt pin, depends on slot */
-// Slot A
-#if RAK12027_SLOT == 'A'
-#pragma message "Slot A"
-#define INT1_PIN WB_IO1
-#define INT2_PIN WB_IO2
-// Slot B
-#elif RAK12027_SLOT == 'B'
-#pragma message "Slot B"
-#define INT1_PIN WB_IO2
-#define INT2_PIN WB_IO1
-// Slot C
-#elif RAK12027_SLOT == 'C'
-#pragma message "Slot C"
+/** Interrupt pins for RAK12027, depends on slot */
+#if __has_include("RAK12027_seismic_S_A.h")
+#include "RAK12027_seismic_S_A.h"
+#elif __has_include("RAK12027_seismic_S_B.h")
+#include "RAK12027_seismic_S_B.h"
+#elif __has_include("RAK12027_seismic_S_C.h")
+#include "RAK12027_seismic_S_C.h"
+#elif __has_include("RAK12027_seismic_S_D.h")
+#include "RAK12027_seismic_S_D.h"
+#elif __has_include("RAK12027_seismic_S_E.h")
+#include "RAK12027_seismic_S_E.h"
+#elif __has_include("RAK12027_seismic_S_F.h")
+#include "RAK12027_seismic_S_F.h"
+#elif
 #define INT1_PIN WB_IO3
 #define INT2_PIN WB_IO4
-// Slot D
-#elif RAK12027_SLOT == 'D'
-#pragma message "Slot D"
-#define INT1_PIN WB_IO5
-#define INT2_PIN WB_IO6
-// Slot E
-#elif RAK12027_SLOT == 'E'
-#pragma message "Slot E"
-#define INT1_PIN WB_IO4
-#define INT2_PIN WB_IO3
-// Slot F
-#elif RAK12027_SLOT == 'F'
-#pragma message "Slot F"
-#define INT1_PIN WB_IO6
-#define INT2_PIN WB_IO5
-#else
-#error message "No interrupt pins defined for RAK12027, define them in RAK12027_seismic.cp
 #endif
+
+// /** Interrupt pin, depends on slot */
+// // Slot A
+// #if RAK12027_SLOT == 'A'
+// #pragma message "Slot A"
+// #define INT1_PIN WB_IO1
+// #define INT2_PIN WB_IO2
+// // Slot B
+// #elif RAK12027_SLOT == 'B'
+// #pragma message "Slot B"
+// #define INT1_PIN WB_IO2
+// #define INT2_PIN WB_IO1
+// // Slot C
+// #elif RAK12027_SLOT == 'C'
+// #pragma message "Slot C"
+// #define INT1_PIN WB_IO3
+// #define INT2_PIN WB_IO4
+// // Slot D
+// #elif RAK12027_SLOT == 'D'
+// #pragma message "Slot D"
+// #define INT1_PIN WB_IO5
+// #define INT2_PIN WB_IO6
+// // Slot E
+// #elif RAK12027_SLOT == 'E'
+// #pragma message "Slot E"
+// #define INT1_PIN WB_IO4
+// #define INT2_PIN WB_IO3
+// // Slot F
+// #elif RAK12027_SLOT == 'F'
+// #pragma message "Slot F"
+// #define INT1_PIN WB_IO6
+// #define INT2_PIN WB_IO5
+// #else
+// #error message "No interrupt pins defined for RAK12027, define them in RAK12027_seismic.cp
+// #endif
 
 // flag variables to handle collapse/shutoff only one time during an earthquake
 bool shutoff_alert = false;

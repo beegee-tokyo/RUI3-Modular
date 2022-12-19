@@ -6,7 +6,5 @@
         ]
     ],
     "board": "rak_rui:stm32:WisDuoRAK3172EvaluationBoard",
-    "port": "COM42",
-    "sketch": "RUI3-Modular.ino",
-    "output": "Build"
+    "port": "COM42"
 }
