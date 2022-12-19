@@ -37,11 +37,15 @@ This is a generic description for the six steps required to build an application
 _**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
 _**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_C.h file.**_
 
-~~2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.~~ Not required anymore. Compiler directives can now detect which modules are being used.     
-2) ~~3)~~ Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172
-3) ~~4)~~ Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)
-4) ~~5)~~ In case of LoRaWAN, join the network from [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT command](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/) [**`AT+JOIN=1:1`**](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-join)    
-5) ~~6)~~ Check the uplinks on the LoRaWAN server
+~~2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.~~ Not required anymore. Compiler directives can now detect which modules are being used.        
+
+2) ~~3)~~ Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172    
+
+3) ~~4)~~ Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/    Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)    
+
+4) ~~5)~~ In case of LoRaWAN, join the network from [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT command](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/) [**`AT+JOIN=1:1`**](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-join)     
+
+5) ~~6)~~ Check the uplinks on the LoRaWAN server    
 
 ## Build an application with two sensors
 
