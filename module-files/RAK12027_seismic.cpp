@@ -144,7 +144,7 @@ void report_status(void)
  */
 void d7s_int1_handler(void)
 {
-	MYLOG("SEIS", "INT1");
+	// MYLOG("SEIS", "INT1");
 	g_seismic_event = SEISMIC_ALERT;
 	// api.system.timer.start(RAK_TIMER_1, 500, NULL);
 	int_1_triggered = true;
@@ -161,7 +161,7 @@ void d7s_int1_handler(void)
  */
 void d7s_int2_handler(void)
 {
-	MYLOG("SEIS", "INT2");
+	// MYLOG("SEIS", "INT2");
 	if (digitalRead(INT2_PIN) == LOW)
 	{
 		digitalWrite(LED_BLUE, HIGH);

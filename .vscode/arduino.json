@@ -5,6 +5,9 @@
             "-DRUI_DEV=2"
         ]
     ],
-    "board": "rak_rui:stm32:WisDuoRAK3172EvaluationBoard",
-    "port": "COM42"
+    "configuration": "softdevice=s140v6,debug=l0,supportnfc=1,supportat=1",
+    "board": "rak_rui:nrf52:WisCoreRAK4631Board",
+    "port": "COM13",
+    "sketch": "RUI3-Modular.ino",
+    "output": "build"
 }

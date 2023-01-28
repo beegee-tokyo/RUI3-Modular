@@ -37,15 +37,13 @@ This is a generic description for the six steps required to build an application
 _**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
 _**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_C.h file.**_
 
-~~2) Edit the file **`module-handler.h`** and enable the module(s) by uncommenting the includes for the required modules. Check the required libraries, you can install them with the ArduinoIDE Library Manager by clicking on the link behind the include.~~ Not required anymore. Compiler directives can now detect which modules are being used.        
+2) Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172    
 
-2) ~~3)~~ Compile and flash the application to the WisBlock RAK4631-R, RAK3372 or WisDuo RAK4630, RAK3172    
+3) Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/    Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)    
 
-3) ~~4)~~ Setup the devices LoRa mode (LoRaWAN or LoRa P2P) and the required credentials with [WisToolBox](https://docs.rakwireless.com/Product-Categories/    Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/)    
+4) In case of LoRaWAN, join the network from [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT command](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/) [**`AT+JOIN=1:1`**](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-join)     
 
-4) ~~5)~~ In case of LoRaWAN, join the network from [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) or with a terminal application and the [RUI3 AT command](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/) [**`AT+JOIN=1:1`**](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-join)     
-
-5) ~~6)~~ Check the uplinks on the LoRaWAN server    
+5) Check the uplinks on the LoRaWAN server    
 
 ## Build an application with two sensors
 
@@ -61,22 +59,15 @@ _**The modules RAK1904, RAK1905, RAK12014, RAK12027 and RAK13011 have different 
 _**Please copy for these files in addition the matching xxxxx_S_Y.h files (Y is A to F and is the name of the slot used). Example:**_    
 _**If using RAK13011 in sensor slot C, copy beside of the RAK13011_switch.cpp as well the matching RAK13011_switch_S_D.h file.**_
 
-### ~~Step 2~~
 
-Not required anymore. Compiler directives can now detect which modules are being used.    
-
-~~Enable the modules in the file **`module_handler.h`** by uncommenting the required includes for the RAK1906 and RAK12019
-<img src="./assets/enable-modules.png" alt="enable modules">
-Then save the file **`module_handler.h`**.~~
-
-### Step 2 ~~Step 3~~
+### Step 2 
 
 Select the WisBlock Core or WisDuo module you want to run the application on and the COM port it is connected to. Then compile and upload the code.
 
 | <img src="./assets/select-core.png" alt="Core"> | <img src="./assets/select-port.png" alt="Port"> | <img src="./assets/upload.png" alt="Upload" > |    
 | :-: | :-: | :-: |
 
-### Step 3 ~~Step 4~~
+### Step 3 
 
 Open a terminal application and connect to the device. Reset the device and you can see the first output of the device with some debug messages. As you can see, it already shows that it found the two WisBlock modules:
 
@@ -89,7 +80,7 @@ To make it easier, the **`RUI3-Modular`** has a custom AT command to show some o
 This device is already setup for LoRaWAN OTAA and has the proper DevEui, AppEUI and AppKey. The LoRaWAN region is as well set correct for my country to **`AS923-3`**.     
 If changes are required, they can be done with the [RUI3 AT commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/).
 
-### Step 4 ~~Step 5~~
+### Step 4 
 
 I assume here the device is already setup in a LoRaWAN server and a gateway is in range.
 
@@ -106,7 +97,7 @@ Now the device starts sending an uplink packet every 30 seconds:
 
 <img src="./assets/terminal-interval-uplink.png" alt="Send Interval">
 
-### Step 5 ~~Step 6~~
+### Step 5 
 
 In the LoRaWAN server check the incoming uplinks (here Chirpstack is used, but other LNS have similar outputs).    
 Here we can see the join request/accept and then the incoming uplink packets:
